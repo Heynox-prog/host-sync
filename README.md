@@ -125,15 +125,16 @@ Importer le fichier `schema.sql` dans MySQL.
 
 ```text
 host-sync/
-├── assets/
-├── database/
-│   └── schema.sql
-├── includes/
-├── pages/
-├── uploads/
-├── vendor/
-├── .env.example
-└── README.md
+├── admin/
+│   │└── database/
+│   │   └── schema.sql
+├── articles/
+├── dashboard/
+├── in-developement/
+├── legal/
+├── services
+├── static
+└── user
 ```
 
 ---
@@ -164,4 +165,4 @@ Il n’est pas conçu pour être utilisé en production sans amélioration impor
 
 Piotr Kowalewski
 
-- GitHub : https://gith
+- GitHub : https://github.com/Heynox-prog
