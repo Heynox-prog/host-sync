@@ -1,0 +1,105 @@
+[data-theme="light"] {
+    /* global theme */
+    --theme-primary: #212121;
+    --theme-secondary: #e0e0e0;
+    --theme-background: #f5f5f5;
+    --theme-surface: #c4c4c4;
+    --theme-on-secondary: #000000;
+    --theme-on-background: #000000;
+    --theme-on-surface: #000000;
+
+    /* message theme */
+    --theme-success-color: #0f9c0f;
+    --theme-success-background: #9cff9c;
+    --theme-success-border: #008000;
+    --theme-error-color: #d10000;
+    --theme-error-background: #ff9292;
+    --theme-error-border: #b00020;
+    --theme-warning-color: #ffb52d;
+    --theme-warning-background: #ffc355;
+    --theme-warning-border: #ffa500;
+
+    /* buttons theme */
+    --theme-btn-primary: #82a1ce;
+    --theme-btn-primary-color: #000000;
+    --theme-btn-secondary: #9088b4;
+    --theme-btn-secondary-color: #000000;
+    --theme-btn-positive: #9cff9c;
+    --theme-btn-positive-color: #008000;
+    --theme-btn-positive-border: #008000;
+    --theme-btn-negative: #ff5858;
+    --theme-btn-negative-color: #b00020;
+    --theme-btn-negative-border: #b00020;
+    --theme-btn-warning: #ffc355;
+    --theme-btn-warning-color: #af7202;
+    --theme-btn-warning-border: #ffa500;
+
+    /* special theme */
+    --theme-input-focus: #82a1ce;
+    --theme-links: var(--theme-btn-primary);
+    --theme-links-secondary: var(--theme-btn-secondary-color);
+    --theme-fa-icons: #3c3c3c;
+    --theme-tag: #82a1ce;
+    --theme-card-bottom-primary: var(--theme-btn-primary);
+    --theme-card-bottom-secondary: var(--theme-btn-secondary);
+
+    /* titles */
+    --theme-main-title: #212121;
+    --theme-subtitle: #6e6e6e;
+    --theme-title-divider: #82a1ce;
+
+    /* Services */
+    --theme-services-main-background: #82a1ce;
+}
+
+[data-theme="dark"] {
+    /* global theme */
+    --theme-primary: #ffffff;
+    --theme-secondary: #3c3c3c;
+    --theme-background: #121212;
+    --theme-surface: #1e1e1e;
+    --theme-on-secondary: #ffffff;
+    --theme-on-background: #ffffff;
+    --theme-on-surface: #ffffff;
+
+    /* message theme */
+    --theme-success-color: #9cff9c;
+    --theme-success-background: #214d21;
+    --theme-success-border: #34c759;
+    --theme-error-color: #ff8080;
+    --theme-error-background: #4d1e1e;
+    --theme-error-border: #cf6679;
+    --theme-warning-color: #4d3c1e;
+    --theme-warning-background: #ffd580;
+    --theme-warning-border: #ffb52d;
+
+    /* buttons theme */
+    --theme-btn-primary: #5c8ed0;
+    --theme-btn-primary-color: #ffffff;
+    --theme-btn-secondary: #6f5ea3;
+    --theme-btn-secondary-color: #ffffff;
+    --theme-btn-positive: #214d21;
+    --theme-btn-positive-color: #9cff9c;
+    --theme-btn-positive-border: #34c759;
+    --theme-btn-negative: #4d1e1e;
+    --theme-btn-negative-color: #ff8080;
+    --theme-btn-negative-border: #cf6679;
+    --theme-btn-warning: #ffd580;
+    --theme-btn-warning-color: #4d3c1e;
+    --theme-btn-warning-border: #ffb52d;
+
+    /* special theme */
+    --theme-input-focus: #5c8ed0;
+    --theme-links: var(--theme-btn-primary);
+    --theme-links-secondary: var(--theme-btn-secondary-color);
+    --theme-fa-icons: #d2d2d2;
+    --theme-tag: #82a1ce;
+
+    /* titles */
+    --theme-main-title: #fff;
+    --theme-subtitle: #aaaaaa;
+    --theme-title-divider: #5c8ed0;
+
+    /* Services */
+    --theme-services-main-background: #5c8ed0;
+}

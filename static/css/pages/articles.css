@@ -1,0 +1,120 @@
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-articles { position: relative; }
+
+.sort-articles__toggler {
+    border: 1.75px solid var(--theme-secondary);
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7.5px 12.5px;
+}
+
+.sort-articles__type {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--theme-background);
+    border: 1.25px solid var(--theme-secondary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    padding: 10px 12.5px;
+    text-wrap: nowrap;
+    z-index: 990;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.sort-articles__type.active {
+    z-index: 990;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate(0);
+}
+
+.sort-articles__type_choice {
+    border: 1.25px solid transparent;
+    border-radius: 5px;
+    text-align: start;
+    padding: 3px 12.5px 3px 5px;
+    transition: border 0.5s ease;
+}
+
+.sort-articles__type_choice:hover {
+    border: 1.25px solid var(--theme-secondary);
+}
+
+.sort-articles__type_choice.active { display: none; }
+
+/* Cards of article */
+.articles-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    justify-content: start;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.article-container {
+    min-width: none;
+    padding-bottom: 12.5px;
+    border: 1.75px solid var(--theme-secondary);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.article { text-decoration: none; }
+
+.article-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.article-row1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.article-image {
+    max-width: 100%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.article-container:hover .article-image {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+.article-row2, .article-row3 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.article-title { font-size: 29px; }
+
+.article-row3 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12.5px;
+}
+
+/* responsive */
+@media (max-width: 830px) { 
+    .articles-header { flex-direction: column; }
+    .sort-articles__toggler { margin-top: 15px; }
+    .sort-articles__type {
+        top: 65px;
+        left: 0; 
+    }
+}
+
+@media (max-width: 700px) { .article-container { width: 100%; } }
